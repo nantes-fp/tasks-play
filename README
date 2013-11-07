@@ -4,5 +4,14 @@ Exemple d'application play + scala.
 
 Par rapport à ce qui a été vu lors de la dernière séance, il y a en plus :
 
+ - début de gestion des utilisateurs
  - formulaires
  - persistence via Anorm
+
+
+## BDD
+
+Pour faire marcher l'exemple, il faut une base de données postgresql. Le plus
+simple est d'en créer une sur clever-cloud.
+
+Le schéma ainsi que des données de test se trouvent dans `conf/schema.sql`.

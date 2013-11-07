@@ -1,0 +1,12 @@
+@(id: java.util.UUID, taskForm: Form[controllers.Task.TaskData])(implicit request: Request[AnyContent])
+
+@main("Edit task") {
+@helper.form(action = routes.Task.update(id.toString)) {
+
+    @helper.inputText(taskForm("name"))
+    @helper.inputText(taskForm("due_date"))
+    @helper.checkbox(taskForm("done"))
+
+    <input type="submit" value="Enregistrer"/>
+}
+}

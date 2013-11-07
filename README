@@ -1,0 +1,8 @@
+# Nantes FP
+
+Exemple d'application play + scala.
+
+Par rapport à ce qui a été vu lors de la dernière séance, il y a en plus :
+
+ - formulaires
+ - persistence via Anorm

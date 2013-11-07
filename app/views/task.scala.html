@@ -1,0 +1,5 @@
+@(task: Task)(implicit request: Request[AnyContent])
+
+<article>
+    <h1><a href="@routes.Task.show(task.id.toString)">@task.name</a></h1>
+</article>

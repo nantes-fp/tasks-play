@@ -1,0 +1,27 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Default path will just redirect to the computer list
+GET     /                           controllers.Application.index
+
+# Computers list (look at the default values for pagination parameters)
+GET     /tasks                      controllers.Task.getAll
+
+# Add computer
+GET     /tasks/new                  controllers.Task.create
+POST    /tasks                      controllers.Task.save
+
+# Edit existing task
+GET     /tasks/:id                  controllers.Task.show(id: String)
+GET     /tasks/:id/edit             controllers.Task.edit(id: String)
+POST    /tasks/:id                  controllers.Task.update(id: String)
+
+GET     /toto/lolo                  controllers.Application.lolo
+
+# Delete a task
+POST    /task/:id/delete            controllers.Task.delete(id: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+

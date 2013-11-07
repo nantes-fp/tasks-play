@@ -1,0 +1,10 @@
+@(tasks: List[Task])(implicit request: Request[AnyContent])
+
+@main("Tasks") {
+<h1>Tasks</h1>
+
+@for(t <- tasks) {
+    @task(t)
+}
+
+}
